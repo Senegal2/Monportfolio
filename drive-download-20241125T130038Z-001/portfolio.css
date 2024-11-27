@@ -1,0 +1,778 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour démarquer le menu */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; /* Ajuster selon la largeur de la page */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px; /* Ajuster selon la taille du logo */
+    margin-left: 80px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight:bold;
+    color: #622582;
+}
+
+.menu {
+    list-style-type: none; /* Retire les puces de la liste */
+    padding: 0; /* Retire le padding par défaut */
+    display: flex; /* Aligne les éléments du menu horizontalement */
+}
+
+.menu li {
+    margin: 0 20px; /* Espace entre les éléments du menu */
+}
+
+.menu a {
+    text-decoration: none; /* Retire le soulignement du texte */
+    color: #622582; /* Couleur du texte */
+    font-size: 17px; /* Taille de la police */
+    transition: color 0.3s, transform 0.3s; /* Animation pour le changement de couleur et l'effet de transformation */
+}
+
+/* Effet de survol */
+.menu a:hover {
+    color: #D9D9D9; /* Change la couleur du texte lors du survol */
+    transform: scale(1.1); /* Agrandit légèrement l'élément lors du survol */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F3F3F3; /* Fond de la section hero */
+    padding: 30px; /* Espacement autour du contenu */
+    display: flex; /* Alignement horizontal */
+    justify-content: center; /* Centrer le contenu */
+    align-items: center; /* Alignement vertical */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+
+.photo-container {
+    background-color: #7D7D7D; /* Fond gris seulement pour le cercle */
+    border-radius: 50%; /* Arrondir les coins pour le cercle */
+    width: 300px; /* Largeur du cercle */
+    height: auto; /* Hauteur du cercle */
+    display: flex;
+    justify-content: center; /* Centrer la photo */
+    align-items: center; /* Centrer la photo */
+    margin-right: 30px; /* Espacement entre l'image et le texte */
+}
+
+.profile-photo {
+    border-radius: 60%; /* Photo arrondie */
+    width: 480%; /* Ajuste selon la préférence */
+    height: 480; /* Conserve le ratio */
+    box: shadow #d9d9d9;
+    display: flex;
+    overflow: hidden;
+}
+
+.text-container {
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Arrondir les bords */
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif; /* Police pour le nom */
+    font-size: 48px; /* Taille du texte */
+     font-weight: 732px ;
+    color: #622582; /* Couleur du texte */
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+.title {
+    font-family: 'Lato', sans-serif; /* Police pour le titre */
+    font-size: 40px; /* Taille du texte */
+    font-weight: 500; /* Semi-bold */
+    color: #622582; /* Couleur du texte */
+    margin: 15px 0; /* Espacement entre le nom et le titre */
+}
+
+.social-icons {
+    display: flex; /* Affiche les icônes horizontalement */
+    gap: 30px; /* Espacement entre les icônes */
+    margin-top: 55px; /* Espacement entre le titre et les icônes */
+    width: 70px; /* Taille des icônes */
+    height: auto; /* Conserve le ratio */
+    margin-left: 80px;
+}
+
+.about {
+    text-align: center; /* Centre le contenu */
+    margin: 90px 0; /* Ajoute de l'espace en haut et en bas de la section */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.about-box {
+    background-color: #FFFFFF; /* Couleur de fond blanche */
+    display: inline-block; /* Permet de centrer le carré */
+    opacity: 85%;
+    padding: 3px -2px; /* Ajoute de l'espace autour du texte */
+    margin-top: -70px; /* Espace entre la ligne et le carré */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour le relief */
+}
+
+.about-title {
+   
+   font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about-section {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    color: #5B168F; /* Same purple color as in the title */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.about-section h2::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.cv-download-button {
+    display: inline-block;
+    background-color: #5B168F; /* Button purple color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.cv-download-button:hover {
+    background-color: #fff;
+    color: #5B168F;
+    border: 2px solid #5B168F;
+    transition: 0.3s ease;
+}
+
+.cv-download-button i {
+    margin-right: 10px;
+}
+
+/* Style pour la section À propos */
+.about-section {
+    margin-bottom: 50px; /* Espacement entre la section À propos et Softskills */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* Style pour la section Softskills */
+.softskills-section {
+    text-align: center;
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Trait sous le titre Softskills */
+.softskills-section h2::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style pour la grille des compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espacement entre les compétences */
+    max-width: 900px;
+    margin: 0 auto; /* Centrer la grille */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style pour chaque compétence */
+.skill {
+    background-color: #F1F1F1;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #5C2E91;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Barres de progression */
+.skill::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 90%;
+    height: 6px;
+    background: linear-gradient(to right, #5C2E91, #B0A7F1);
+    border-radius: 3px;
+    margin-left: 5%;
+}
+
+/* Style pour la section Projets */
+.projects-section {
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.projects-section h2 :after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+.projects-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Mise en page de la grille des projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style pour chaque projet */
+.project-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #5C2E91;
+    font-weight: bold;
+}
+
+/* Animation au survol */
+.project-item:hover {
+    transform: scale(1.05);
+    border-color: #5C2E91;
+}
+
+/* Section Compétences */
+.skills-section {
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-section h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.skills-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+
+/* Grille des compétences */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Ajoute de l'espace entre les compétences */
+}
+
+/* Style pour chaque compétence */
+.skill {
+    background-color: #EAEAEA;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #5C2E91;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Ajoute de l'espace autour de chaque compétence */
+}
+
+/* Effet au survol */
+.skill:hover {
+    background-color: #D2B4DE;
+}
+
+.section-outils {
+    text-align: center; /* Centrer le titre et la box */
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-outils h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-outils h2::after {
+    content: '';
+    display: block;
+    width: 60px; /* Taille de la ligne sous le titre */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #5C2E91;
+    margin: 10px auto; /* Centrer la ligne */
+}
+
+.box-outils {
+    display: inline-block; /* Pour que la box soit ajustée à son contenu */
+    border: 2px solid #5C2E91; /* Bordure violette */
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center; /* Aligner le texte à gauche */
+    max-width: 700px; /* Taille maximale de la box */
+    width: 100%; /* Pour s'adapter à la taille de l'écran */
+}
+
+.box-outils ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Retirer les puces par défaut */
+}
+
+.box-outils li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.box-outils li::before {
+    content: "• "; /* Ajouter une puce personnalisée */
+    color: #5C2E91; /* Couleur des puces */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    justify-content: center;
+}
+
+.services-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colonnes */
+    grid-template-rows: auto auto; /* 2 lignes */
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #5C2E91;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    color: #5C2E91;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-box:nth-child(5) {
+    grid-column: span 2; /* Les 4ème et 5ème blocs s'étendent sur 2 colonnes */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonials-section h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonials-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.testimonial-box p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-quote {
+    font-size: 40px;
+    color: #5C2E91;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #5C2E91;
+}
+
+.testimonial-author p {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Section Partenaires */
+#partenaires {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #F5F5F5; /* Couleur de fond pour se démarquer */
+}
+
+#partenaires h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #5C2E91; /* Couleur violette pour les titres */
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+#partenaires h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+/* Conteneur des logos partenaires */
+.partenaires-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacement entre les logos */
+}
+
+/* Style des logos */
+.partenaires-container .partenaire {
+    width: 150px; /* Taille des logos */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour effet 3D */
+}
+
+/* Style des images de partenaires */
+.partenaires-container .partenaire img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image au cercle */
+}
+
+/* Section Styles */
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #6F3B9D;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Rows and Groups */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    color: #6F3B9D;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #6F3B9D;
+    border-radius: 4px;
+}
+
+/* Full width for message */
+.full-width textarea {
+    width: 440px;
+    height: 120px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #6F3B9D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.submit-btn:hover {
+    background-color: #5a2d7d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6F3B9D;
+    font-size: 0.9em;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.legal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.legal-links a {
+    color: #6F3B9D;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #6F6F6F;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
+
+

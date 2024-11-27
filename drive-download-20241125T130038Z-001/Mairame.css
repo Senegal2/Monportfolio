@@ -1,0 +1,381 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour démarquer le menu */
+}
+
+.navbar {
+    padding: 10px 30px; /* Ajuster la taille du menu */
+}
+
+.navbar-brand img {
+    width: 70px; /* Taille du logo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #622582;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D9D9D9; /* Changement de couleur au survol */
+}
+
+.hero {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.profile-photo {
+    width: 100%; /* 100% de la largeur du conteneur */
+    max-width: 200px; /* Taille maximale */
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Section À propos */
+.about {
+    text-align: center;
+    margin: 90px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-section {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.about-section h2 {
+    color: #5B168F;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-section h2::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #5C2E91;
+    margin: 10px auto;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.cv-download-button {
+    display: inline-block;
+    background-color: #5B168F;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.cv-download-button:hover {
+    background-color: #fff;
+    color: #5B168F;
+    border: 2px solid #5B168F;
+    transition: 0.3s ease;
+}
+
+.cv-download-button i {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .cv-download-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.skill {
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #5C2E91;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #D2B4DE;
+}
+
+.project-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    border-color: #5C2E91;
+}
+
+/* Style pour la section Compétences */
+.skills-section {
+    text-align: center;
+    margin: 50px 0; /* Ajoute de l'espace en haut et en bas */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-section h2 {
+    font-size: 36px;
+    color: #5C2E91;
+    margin-bottom: 30px; /* Ajoute un espacement entre le titre et la grille */
+    font-weight: bold;
+}
+
+.skills-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #5C2E91;
+    margin: 10px auto 30px auto; /* Espace supplémentaire pour la séparation */
+}
+
+/* Style de la grille des compétences */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet un retour à la ligne automatique */
+    justify-content: center;
+    gap: 20px; /* Ajoute un espacement uniforme entre les compétences */
+    max-width: 1000px;
+    margin: 0 auto; /* Centrer la grille */
+    padding: 0 15px; /* Ajouter une marge intérieure pour la responsivité */
+}
+
+/* Style pour chaque compétence */
+.skill {
+    background-color: #EAEAEA;
+    padding: 15px 25px; /* Ajoute de l'espace intérieur */
+    border-radius: 20px;
+    font-size: 16px;
+    color: #5C2E91;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Espacement supplémentaire autour des compétences */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : effet visuel */
+}
+
+/* Effet au survol */
+.skill:hover {
+    background-color: #D2B4DE;
+}
+
+/* Section Outils */
+.box-outils {
+    margin: 0 auto; /* Centrer la box */
+    padding: 30px;
+    border: 2px solid #5C2E91;
+    border-radius: 20px;
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.box-outils ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box-outils li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Services Section */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-box {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Partenaires Section */
+.partenaires-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.partenaire img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partenaire img:hover {
+    transform: scale(1.1);
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px); /* Deux colonnes */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Largeur totale */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #5C2E91;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #442072;
+}
+
+/* Footer */
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #5C2E91;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #442072;
+    color: #fff;
+}
+
+
